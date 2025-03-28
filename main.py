@@ -472,4 +472,4 @@ class NaughtsAndCrossesApp(App):
         return MainWidget()
 Window.set_icon("app_icon.png")
 Window.clearcolor = (0.173, 0.243, 0.314, 1) #set bg color
-NaughtsAndCrossesApp().run() #name of window: FreeGames automatically
+NaughtsAndCrossesApp().run() #name of window: NaughtsAndCrosses automatically
