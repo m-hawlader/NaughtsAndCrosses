@@ -1,0 +1,125 @@
+<MainWidget>:
+    nacbs: [[b_0_0, b_0_1, b_0_2],[b_1_0, b_1_1, b_1_2],[b_2_0, b_2_1, b_2_2]]
+    turn_label: tlabel
+    BoxLayout:
+        orientation: "vertical"
+        size_hint: 0,0
+        pos_hint: {"center_x":0.05,"center_y":0.7} #size_hint 0,0 needed for this
+        Label:
+            id: tlabel
+            text: "You're playing PVP: player X turn"
+            color: (1,1,1,1)
+            size_hint: None, None
+            size: "300dp", "50dp"
+        GridLayout:
+            cols: 3
+            rows: 4
+            size_hint: None, None
+            size: "300dp", "300dp"  # Fixed grid size
+            width: "900dp"
+            height:"50dp"
+            Button:
+                text: "PVP"
+                background_normal: ""
+                background_color: (0.102,0.737,0.612)
+                color: (1,1,1,1)
+                size_hint: None, None
+                size: "100dp", "50dp"
+                on_press: root.setup(0)
+            Button:
+                text: "Vs AI X"
+                background_normal: ""
+                background_color: (0.102,0.737,0.612)
+                color: (1,1,1,1)
+                size_hint: None, None
+                size: "100dp", "50dp"
+                on_press: root.setup(1)
+            Button:
+                text: "Vs AI O"
+                background_normal: ""
+                background_color: (0.102,0.737,0.612)
+                color: (1,1,1,1)
+                size_hint: None, None
+                size: "100dp", "50dp"
+                on_press: root.setup(2)
+            Button:
+                id: b_0_0
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"  # Fixed button size
+                color: (1,1,1,1) #needed to remove default image and change color
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(0,0)
+            Button:
+                id: b_0_1
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(0,1)
+            Button:
+                id: b_0_2
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(0,2)
+            Button:
+                id: b_1_0
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(1,0)
+            Button:
+                id: b_1_1
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(1,1)
+            Button:
+                id: b_1_2
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(1,2)
+            Button:
+                id: b_2_0
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(2,0)
+            Button:
+                id: b_2_1
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(2,1)
+            Button:
+                id: b_2_2
+                text: ""
+                size_hint: None, None
+                size: "100dp", "100dp"
+                color: (1,1,1,1)
+                background_normal: ""
+                background_color: (0.925,0.941,0.945,1)
+                on_press: root.plot(2,2)
